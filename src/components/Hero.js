@@ -4,7 +4,7 @@ import BgImg from "../assets/bg-image.png";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
 const Section = styled.section`
-  height: 785px;
+  height: 100%;
   display: block;
   background-repeat: no-repeat;
   background-size: contain;
@@ -12,18 +12,38 @@ const Section = styled.section`
 
 const Content = styled.div`
   width: 100%;
-  height: 100px;
+
   display: flex;
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
 `;
 
 const Left = styled.div`
-  padding-left: 220px;
-  padding-top: 143px;
+  padding-left: 14rem;
+  padding-top: 8rem;
+  @media (max-width: 1024px) {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 const Right = styled.div`
-  width: 676px;
-  height: 738px;
+  width: 80%;
+  @media (max-width: 1024px) {
+    padding: 2rem;
+    margin: auto;
+    width: 100%;
+  }
+`;
+
+const Image = styled.img`
+  width: 100%;
 `;
 
 const Title = styled.p`
@@ -46,7 +66,7 @@ const Button = styled.a`
   align-items: center;
   border-radius: 18px;
   margin-top: 58px;
-  width: 371px;
+  width: 80%;
   height: 71px;
   line-height: 71px;
   font-size: 22px;
@@ -72,12 +92,12 @@ const Hero = () => {
             and more!
           </Desc>
           <Button href="https://bit.ly/webull-join" target="_blank">
-            <span>Claim your free stocks now</span>
+            <span>Claim </span>
             <MdKeyboardArrowRight />
           </Button>
         </Left>
         <Right>
-          <img alt="hero" src={BgImg}></img>
+          <Image alt="hero" src={BgImg}></Image>
         </Right>
       </Content>
     </Section>

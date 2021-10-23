@@ -4,7 +4,7 @@
 
 ![Webullclone Logo](./assets/img/logo.svg)
 
-> A clone of the webull site for practicing react.js
+> A clone of the webull site aiming to practice react.js and styled components.
 
 ---
 

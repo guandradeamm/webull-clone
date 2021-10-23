@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import BgImg from "../assets/bg-image.png";
+import { MdKeyboardArrowRight } from "react-icons/md";
 
 const Section = styled.section`
   height: 785px;
@@ -22,7 +23,7 @@ const Left = styled.div`
 
 const Right = styled.div`
   width: 676px;
-  height: 100%;
+  height: 738px;
 `;
 
 const Title = styled.p`
@@ -72,6 +73,7 @@ const Hero = () => {
           </Desc>
           <Button href="https://bit.ly/webull-join" target="_blank">
             <span>Claim your free stocks now</span>
+            <MdKeyboardArrowRight />
           </Button>
         </Left>
         <Right>
